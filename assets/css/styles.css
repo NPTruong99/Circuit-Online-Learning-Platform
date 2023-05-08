@@ -32,17 +32,80 @@ button {
     font-family: inherit;
 }
 
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
 .btn {
     --height: 62px;
 
+    display: inline-block;
     font-weight: 600;
     min-width: 104px;
     font-size: 1.8rem;
     color: #032e32;
+    border-radius: 8px;
     text-align: center;
     height: var(--height);
     line-height: var(--height);
     background: var(--bg-btn);
 }
 
+.btn:hover {
+    opacity: 0.8;
+}
+
 /* Header */
+.header {
+    padding: 28px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav-link {
+    padding: 8px 21px;
+    line-height: 1.75;
+    color: #032e32;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-link::before {
+    content: attr(title);
+    display: block;
+    font-weight: 600;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-link:hover,
+.nav-link--active {
+    font-weight: 600;
+    line-height: 1.75;
+    color: #032e32;
+}
+
+.header__cta-link {
+    font-weight: 600;
+    line-height: 1.75;
+    color: #032e32;
+    margin-right: 28px;
+}
+
+.sign-up-btn {
+    --height: 50px;
+
+    color: #fff;
+    background: #032e32;
+    border-radius: 6px;
+}
