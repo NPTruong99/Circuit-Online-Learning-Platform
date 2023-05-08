@@ -1,0 +1,48 @@
+:root {
+    --bg-btn: #b5ed3d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.btn {
+    --height: 62px;
+
+    font-weight: 600;
+    min-width: 104px;
+    font-size: 1.8rem;
+    color: #032e32;
+    text-align: center;
+    height: var(--height);
+    line-height: var(--height);
+    background: var(--bg-btn);
+}
+
+/* Header */
