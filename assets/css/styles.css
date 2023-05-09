@@ -46,7 +46,7 @@ button {
 }
 
 .section-desc {
-    margin-top: 18px;
+    margin-top: 20px;
     font-size: 1.8rem;
     line-height: 1.67;
     color: #4f5a5a;
@@ -75,13 +75,14 @@ button {
 
 /* Header */
 .header {
-    padding: 28px 0;
+    padding: 28px 0 12px;
     background: var(--bg-primary);
 }
 
 .header.header-fixed {
     position: sticky;
     top: -16px;
+    z-index: 999;
 }
 
 .header__inner {
@@ -135,7 +136,7 @@ button {
 
 /* Hero */
 .hero {
-    padding: 102px 0 156px;
+    padding: 118px 0 156px;
     background: var(--bg-primary);
 }
 
@@ -364,4 +365,40 @@ button {
 
 .benefit-item:nth-child(2) .benefit-item__title {
     width: 143px;
+}
+
+/* Support */
+.support {
+    padding: 160px 0 80px;
+}
+
+.support__content {
+    width: 570px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.support__more {
+    margin-top: 40px;
+    min-width: 167px;
+}
+
+.support__media {
+    margin-top: 70px;
+}
+
+.support__img-wrap {
+    display: flex;
+    gap: 40px;
+}
+
+.support__img {
+    width: 670px;
+    height: 440px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.support__img:nth-child(2) {
+    width: 470px;
 }
