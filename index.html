@@ -99,7 +99,7 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header header-fixed">
             <div class="container">
                 <div class="header__inner">
                     <!-- Logo -->
@@ -146,5 +146,114 @@
                 </div>
             </div>
         </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <h1 class="heading">
+                            Learn at the comfort of your own home
+                        </h1>
+
+                        <p class="section-desc">
+                            Circuit is a Global training provider based across
+                            the UK that specialises in accredited and bespoke
+                            training courses.
+                        </p>
+
+                        <form class="hero__search-form">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    placeholder="Find a course"
+                                    class="form-control"
+                                />
+
+                                <img
+                                    src="./assets/icon/search.svg"
+                                    alt=""
+                                    class="search-form__icon"
+                                />
+                            </div>
+
+                            <input
+                                type="submit"
+                                value="Discover Now"
+                                class="btn hero-search__form-submit"
+                            />
+                        </form>
+                    </section>
+
+                    <!-- Hero media -->
+                    <div class="hero__media">
+                        <article class="hero-card">
+                            <figure class="hero-card__img-wrap">
+                                <img
+                                    src="./assets/img/hero-img.png"
+                                    alt=""
+                                    class="hero-card__img"
+                                />
+
+                                <div class="hero-card__icon-wrap">
+                                    <svg
+                                        width="20"
+                                        height="16"
+                                        viewBox="0 0 20 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M18.9999 7.99905L0.999939 7.99999"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M11.9999 1L18.9999 8L11.9999 15"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </figure>
+
+                            <section class="hero-card__info">
+                                <p class="hero-card__label">Web Design</p>
+                                <div class="hero-card__row">
+                                    <h3 class="hero-card__name">
+                                        Basic Web Design 2022
+                                    </h3>
+
+                                    <span class="hero__card-price">$ 149</span>
+                                </div>
+
+                                <div class="rating">
+                                    <span class="rate__value">4.5</span>
+                                    <img
+                                        src="./assets/icon/star.svg"
+                                        alt=""
+                                        class="rate__icon"
+                                    />
+
+                                    <span class="rate__quantity">(5325)</span>
+                                </div>
+                            </section>
+                        </article>
+                        <img
+                            src="./assets/icon/hero-decor.svg"
+                            alt=""
+                            class="hero__decor"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
