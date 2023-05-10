@@ -197,11 +197,11 @@ button {
     justify-content: center;
 }
 
-.hero-card__img-wrap {
+.card__img-wrap {
     position: relative;
 }
 
-.hero-card {
+.card {
     position: relative;
     width: 370px;
     padding: 24px;
@@ -210,14 +210,15 @@ button {
     z-index: 1;
 }
 
-.hero-card__img {
+.card__img {
     width: 100%;
     height: 262px;
     object-fit: cover;
     border-radius: 12px;
+    display: block;
 }
 
-.hero-card__icon-wrap {
+.card__icon-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,37 +234,42 @@ button {
     color: #fff;
 }
 
-.hero-card__icon-wrap:hover {
+.card__icon-wrap:hover {
     color: #032e32;
     background: var(--bg-btn);
 }
 
-.hero-card__info {
+.card__info {
     margin-top: 30px;
 }
 
-.hero-card__label {
+.card__label {
     font-size: 1.4rem;
     line-height: 1.71;
     color: #69797a;
 }
 
-.hero-card__row {
+.card__row {
+    margin-top: 2px;
     display: flex;
     justify-content: space-between;
 }
 
-.hero-card__name {
+.card__name {
     font-weight: 700;
     line-height: 1.75;
     color: #032e32;
 }
 
-.hero__card-price {
+.card-price {
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 1.67;
     color: #032e32;
+}
+
+.rating {
+    margin-top: 2px;
 }
 
 .rate__value,
@@ -284,26 +290,26 @@ button {
     transform: translateY(-50%);
 }
 
-/* Benefit */
-.benefit {
+/* Banner */
+.banner {
     background: #032e32;
     padding: 48px 0;
 }
 
-.benefit__inner {
+.banner__inner {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.benefit__label {
+.banner__label {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #ffffff;
 }
 
-.benefit__heading {
+.banner__heading {
     width: 437px;
     margin-top: 12px;
     font-weight: 700;
@@ -312,7 +318,7 @@ button {
     color: #fff;
 }
 
-.benefit__media {
+.banner__media {
     position: absolute;
     text-align: center;
     width: 242px;
@@ -323,7 +329,7 @@ button {
     left: 516px;
 }
 
-.benefit__img {
+.banner__img {
     width: calc(100% - 22px);
     height: 260px;
     object-fit: cover;
@@ -332,7 +338,7 @@ button {
     left: 11px;
 }
 
-.benefit__btn {
+.banner__btn {
     position: absolute;
     top: 50px;
     left: -28px;
@@ -344,17 +350,17 @@ button {
     transition: 0.25s linear;
 }
 
-.benefit__btn:hover {
+.banner__btn:hover {
     color: #fff;
     background: var(--bg-btn);
 }
 
-.benefit__list {
+.banner__list {
     display: flex;
     column-gap: 48px;
 }
 
-.benefit-item__title {
+.banner-item__title {
     margin-top: 14px;
     font-weight: 600;
     font-size: 1.8rem;
@@ -363,7 +369,7 @@ button {
     width: 167px;
 }
 
-.benefit-item:nth-child(2) .benefit-item__title {
+.banner-item:nth-child(2) .banner-item__title {
     width: 143px;
 }
 
@@ -445,4 +451,34 @@ button {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #4f5a5a;
+}
+
+/* Course */
+.course {
+    padding: 100px 0;
+    background: #e0eae5;
+}
+
+.course__heading,
+.course__desc {
+    width: 570px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.course__list {
+    margin-top: 70px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course__cta-wrap {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.course__cta {
+    min-width: 158px;
+    text-align: center;
 }
